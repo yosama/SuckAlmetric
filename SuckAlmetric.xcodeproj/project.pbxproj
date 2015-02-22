@@ -38,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB5319071A9836D500422005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		DBB4D87B1A97F03C00CD7BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +65,7 @@
 		DBB4D8861A97F03D00CD7BE6 /* SuckAlmetric */ = {
 			isa = PBXGroup;
 			children = (
+				DB5319071A9836D500422005 /* Resources */,
 				DBB4D8871A97F03D00CD7BE6 /* main.m */,
 			);
 			path = SuckAlmetric;
@@ -102,6 +111,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DBB4D87B1A97F03C00CD7BE6;
 			productRefGroup = DBB4D8851A97F03D00CD7BE6 /* Products */;
@@ -202,6 +212,19 @@
 		DBB4D88C1A97F03D00CD7BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/demoCoreAPI/coreAPI",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/iOSWindChallenge/Pods/Parse",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/windApp/Pods/Parse",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/libxsls/src/.libs",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/windApp/I/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/SuckAlmetric/libxls/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +232,19 @@
 		DBB4D88D1A97F03D00CD7BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/demoCoreAPI/coreAPI",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/iOSWindChallenge/Pods/Parse",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/windApp/Pods/Parse",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/libxsls/src/.libs",
+					"$(PROJECT_DIR)/SuckAlmetric/myFacebooks/windApp/I/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/SuckAlmetric/libxls/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +268,7 @@
 				DBB4D88D1A97F03D00CD7BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
